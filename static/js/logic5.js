@@ -60,13 +60,13 @@ var earthquakeLayerSml = L.layerGroup(earthquakeMarkersSml);
 var satellitemap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
     maxZoom: 10,
     id: "mapbox.satellite",
-    accessToken: "pk.eyJ1Ijoic3RldmVuamJhcmsiLCJhIjoiY2s2Ymc4empqMTE0cDNtbXJva2NrdmU5NyJ9.OvK6m1WRo2_GJWWqKxXq8w"
+    accessToken: API_KEY
 });
 
 var darkmap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
     maxZoom: 10,
     id: "mapbox.dark",
-    accessToken: "pk.eyJ1Ijoic3RldmVuamJhcmsiLCJhIjoiY2s2Ymc4empqMTE0cDNtbXJva2NrdmU5NyJ9.OvK6m1WRo2_GJWWqKxXq8w"
+    accessToken: API_KEY
 });
 
 //Define baseMaps for display in control menu
@@ -91,6 +91,5 @@ var earthquakeMap = L.map("map", {
 
 //Create layer control menu
 L.control.layers(baseMaps, overlayMaps, {collapsed: false}).addTo(earthquakeMap);
-
 
 });
