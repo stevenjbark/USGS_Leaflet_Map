@@ -78,15 +78,15 @@ var baseMaps = {
 //Define overlayMap for display of earthquake data from earthquakes variable.
 var overlayMaps = {
     "Earthquakes_4.5+": earthquakeLayerBig,
-    "Earthquakes_2.5+": earthquakeLayerMid,
-    "Earthquakes_1.0+": earthquakeLayerSml
+    "Earthquakes_2.5-4.5": earthquakeLayerMid,
+    "Earthquakes_1.0-2.5": earthquakeLayerSml
 }
 
 //Create map object in Leaflet
 var earthquakeMap = L.map("map", {
-    center: [37.09, -95.71],
-    zoom: 3,
-    layers: [satellitemap, earthquakeLayerBig, earthquakeLayerMid, earthquakeLayerSml]
+    center: [10.0, 0.0],
+    zoom: 2,
+    layers: [darkmap, earthquakeLayerBig, earthquakeLayerMid, earthquakeLayerSml]
 });
 
 //Create layer control menu
