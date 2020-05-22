@@ -1,5 +1,5 @@
 # Visualizing Earthquake Data with Leaflet
-Visualization of earthquake data from the USGS 
+![USGS Earthquake Image](readme_img/Leaflet1.PNG)
 
 # Description
 JSON data from the USGS on earthquakes from various regions across the globe were visualized on a graphical map.
