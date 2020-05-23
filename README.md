@@ -15,4 +15,4 @@ Note that the user-interactive features may react differently depending on brows
 HTML, CSS, JavaScript, D3, Leaflet
 
 # URL
-https://stevenjbark.github.io/leaflet-challenge/
+https://stevenjbark.github.io/USGS_Leaflet_Map/
